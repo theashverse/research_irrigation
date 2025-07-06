@@ -1,4 +1,4 @@
-# 🌱 Smart Soil Irrigation Simulation using Physics and IoT Concepts
+#  Smart Soil Irrigation Simulation using Physics and IoT Concepts
 
 This project simulates how water moves through soil using simple physics-based models. It also mimics IoT sensor noise to show how real smart irrigation systems might behave in practice.
 
@@ -16,15 +16,15 @@ The goal is to demonstrate how science and technology (Python + physics + sensor
 
 ---
 
-## 📊 Simulation Results
+##  Simulation Results
 
-- 📈 Soil moisture profiles at different times
-- 📡 Noisy vs. true sensor comparison plot
-- 🧪 Demonstrates how dry soil triggers smart irrigation decisions
+-  Soil moisture profiles at different times
+-  Noisy vs. true sensor comparison plot
+-  Demonstrates how dry soil triggers smart irrigation decisions
 
 ---
 
-## 🧠 Technologies Used
+##  Technologies Used
 
 - Python 3
 - NumPy
@@ -33,7 +33,7 @@ The goal is to demonstrate how science and technology (Python + physics + sensor
 
 ---
 
-## 📝 Paper
+##  Paper
 
 This simulation is part of the research paper:
 
@@ -44,7 +44,7 @@ This simulation is part of the research paper:
 
 ---
 
-## 📂 Files in This Repo
+##  Files in This Repo
 
 | File | Description |
 |------|-------------|
@@ -55,14 +55,14 @@ This simulation is part of the research paper:
 
 ---
 
-## 🔖 License
+##  License
 
 This project is licensed under **Creative Commons Attribution 4.0 (CC BY 4.0)**  
 Feel free to use, modify, and share — just give proper credit.
 
 ---
 
-## 🙋‍♂️ Author
+##  Author
 
 **Ayush Gupta**  
 B.Tech CSE, KIIT  
