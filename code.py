@@ -10,22 +10,22 @@ Original file is located at
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 🌱 Soil column parameters
+#  Soil column parameters
 depth = 1.0           # depth of soil column in meters
 nz = 100              # number of vertical points
 dz = depth / nz       # vertical resolution
 dt = 0.01             # time step in seconds
 nt = 1000             # number of time steps
 
-# 🧪 Physics parameters
+#  Physics parameters
 D = 0.001             # diffusion coefficient (m^2/s)
 E = 0.0001            # evaporation rate at surface (1/s)
 
-# 📊 Initialize soil moisture profile
+#  Initialize soil moisture profile
 theta = np.zeros(nz)         # initial moisture = 0 everywhere
 theta[0:10] = 1.0            # top 10 layers are saturated (initial irrigation)
 
-# ⏱️ Time loop
+#  Time loop
 history = []
 for t in range(nt):
     theta_new = theta.copy()
@@ -45,7 +45,7 @@ for t in range(nt):
     if t % 100 == 0:
         history.append(theta.copy())
 
-# 🎨 Plot moisture profiles at selected times
+#  Plot moisture profiles at selected times
 plt.figure(figsize=(6, 5))
 for i, profile in enumerate(history):
     plt.plot(profile, np.linspace(0, depth, nz), label=f't = {i*dt*100:.1f}s')
@@ -58,7 +58,7 @@ plt.grid(True)
 plt.savefig("moisture_evolution.png", dpi=300)
 plt.show()
 
-# 📡 Simulate IoT Sensor Readings with Noise
+#  Simulate IoT Sensor Readings with Noise
 def add_sensor_noise(data, noise_std=0.02):
     noisy = data + np.random.normal(0, noise_std, size=data.shape)
     return np.clip(noisy, 0, 1)  # keep between 0 and 1
@@ -67,7 +67,7 @@ def add_sensor_noise(data, noise_std=0.02):
 true_profile = theta.copy()
 sensor_profile = add_sensor_noise(true_profile)
 
-# 🖼️ Plot True vs Sensor Moisture
+#  Plot True vs Sensor Moisture
 plt.figure(figsize=(6, 5))
 plt.plot(true_profile, np.linspace(0, depth, nz), label="True Moisture", lw=2)
 plt.plot(sensor_profile, np.linspace(0, depth, nz), label="Sensor Output", lw=2, linestyle='--')
