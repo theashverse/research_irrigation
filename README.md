@@ -40,7 +40,7 @@ This simulation is part of the research paper:
 > **Smart Soil Irrigation Simulation Using Physics and IoT Ideas**  
 > Ayush Gupta, KIIT  
 > Published on Zenodo (2025)  
-> [🔗 View Paper on Zenodo](https://zenodo.org/record/your-doi-here)
+> [🔗 View Paper on Zenodo](https://doi.org/10.5281/zenodo.15820521)
 
 ---
 
